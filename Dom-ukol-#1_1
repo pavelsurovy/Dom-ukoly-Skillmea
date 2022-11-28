@@ -1,0 +1,18 @@
+/*
+ 1. Spojte nasledovné stringy dokopy
+ auto / servis
+ ľadový / čaj
+ poly / styrén
+ */
+
+var slovo1 = "auto / servis"
+var slovo2 = "ľadový / čaj"
+var slovo3 = "poly / styrén"
+
+var noveSlovo1 = slovo1.replacingOccurrences(of: " / ", with: "")
+var noveSlovo2 = slovo2.replacingOccurrences(of: " / ", with: "")
+var noveSlovo3 = slovo3.replacingOccurrences(of: " / ", with: "")
+
+print(noveSlovo1)
+print(noveSlovo2)
+print(noveSlovo3)
