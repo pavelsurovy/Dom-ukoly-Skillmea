@@ -1,0 +1,10 @@
+// 2. Automatizuj vzorec na výpočet obvodu obdĺžnika
+
+print("Program pro výpočet obvodu obdélníku.")
+print("-------------------------------------")
+print ("Zadej délku 1. strany [cm]: ")
+let a = Double(readLine()!)!
+print ("Zadej délku 2. strany [cm]: ")
+let b = Double(readLine()!)!
+let obvod = (a * 2) + (b * 2)
+print("Obvod obdélníku je: \(obvod) cm.")
