@@ -16,3 +16,4 @@ for i in 1...6{
     print("Losování č.\(i): \(pole1) \(pole2)")
     pole1.removeAll()
     pole2.removeAll()
+}
