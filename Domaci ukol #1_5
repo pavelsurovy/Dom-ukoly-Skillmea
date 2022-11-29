@@ -1,0 +1,12 @@
+// 29.11.1965 bola najvyššia nameraná rýchlosť vetra na slovensku na Skalnatom Plese.
+// Vietor dosahoval rýchlosť 283 km/h.
+// Chcem vedieť aká rýchlosť to je v m/s a ktas.
+
+let rychlost : Float = 283
+let km : Float = 3.6
+let ktas : Float = 1.85
+
+let vitrMS = rychlost / km
+let vitrKtas = rychlost / ktas
+
+print("283 Km/h = \(Int(vitrMS)) m/s = \(Int(vitrKtas)) Ktas.")
