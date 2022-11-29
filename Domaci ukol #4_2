@@ -1,0 +1,13 @@
+// vypíšte prvých 15 čísel z fibonacciho postupnosti
+
+var firstNumber = 0
+var secondNumber = 1
+var fibonacciNumber = [firstNumber, secondNumber]
+
+for _ in 1...15 {
+    let nextNumber = firstNumber + secondNumber
+    firstNumber = secondNumber
+    secondNumber = nextNumber
+    fibonacciNumber += [nextNumber]
+}
+print(fibonacciNumber)
