@@ -1,0 +1,18 @@
+/*1. Spravte losovanie v EuroJackpote 6 žrebovaní
+výstup by mal vyzerať nasledovne:
+x = 1 až 50, y = 1 až 10
+[x, x, x, x, x] [y, y] (6x pod sebou)*/
+
+var pole1 = [Int]()
+var pole2 = [Int]()
+
+for i in 1...6{
+    for _ in 1...6 {
+        pole1.append(Int.random(in: 1...50))
+    }
+    for _ in 1...2 {
+        pole2.append(Int.random(in: 1...10))
+    }
+    print("Losování č.\(i): \(pole1) \(pole2)")
+    pole1.removeAll()
+    pole2.removeAll()
