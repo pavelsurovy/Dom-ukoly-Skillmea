@@ -1,0 +1,3 @@
+// Automatizuj vzorec na výpočet objemu kocky
+
+let s = a * a * a
