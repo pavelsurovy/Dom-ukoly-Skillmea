@@ -1,0 +1,23 @@
+// Vytvorte funkciu, ktorá príjme celé číslo (v desiatkovej sústave) a navráti toto číslo v binárnej sústave.
+// napr: binary(125)
+// výstup: 1111101, či bude pole ([1, 1, 1, 1, 1, 0, 1]), alebo string ("1111101") je úplne na vás.
+
+print("Vlož libovolné číslo: ")
+var vstup = Int(readLine()!)!
+
+func binarni(_ cislo: Int) -> String {
+    var vystup = ""
+    var zbytek = cislo
+
+    while zbytek != 0 {
+        if zbytek % 2 == 1 {
+            vystup += "1"
+        } else {
+            vystup += "0"
+        }
+        zbytek /= 2
+    }
+    let obracene = String(vystup.reversed())
+    return obracene
+}
+print(binarni(vstup))
