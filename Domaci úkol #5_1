@@ -1,0 +1,22 @@
+/*
+ 1. V časti o priemereTestov nie je korektne spravený výsledok.
+ Ak by Juraj mal z testov iné známky, výsledok by bol stále celé číslo.
+ Ale priemer by mal vedieť byť aj desatiné číslo. Opravte výpočet tak, aby
+ sa výsledok zobrazoval korektne, aj keď výjde desatiné číslo.
+*/
+
+func prumerTestu(zak: String, hodnoceni: [Int]) -> String {
+    var vysledek = "\(zak) má z tessků průměr: "
+    var prumer = 0.0
+    
+    for znamka in hodnoceni {
+        prumer += Double(znamka)
+    }
+    prumer /= Double(hodnoceni.count)
+    
+    vysledek += String(prumer)
+    vysledek += " bodů."
+    return vysledek
+}
+let juraj = prumerTestu(zak: "Juraj", hodnoceni: [81, 92, 75, 70, 88])
+print(juraj)
