@@ -17,3 +17,4 @@ for i in 1...6{
     pole1.removeAll()
     pole2.removeAll()
 }
+.
